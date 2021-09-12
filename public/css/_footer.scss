@@ -1,0 +1,18 @@
+footer{
+    position: sticky;
+    bottom: 0;
+    z-index: 1;
+    background-color: #f2f2f2;;
+    font-family: var(--primary-font);
+    text-align: center;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+    a{
+        display: inline-block;
+        text-decoration: none;
+        font-weight: 700;
+        padding: 10px 20px;
+        background-color: $color-orange;
+        color: $primary-white;
+        border-radius: 2px;
+    }
+}

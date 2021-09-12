@@ -1,0 +1,34 @@
+.contact{
+    display: block;
+
+    &-desc{
+        
+        color: $primary-desc;
+        margin-top: var(--space-sm);
+    }
+
+    &-form{
+        margin-top: var(--space-2xl);
+    }
+    &-field{
+        padding: 20px 30px;
+        display: block;
+        width: 100%;
+        border: 1px solid orange;
+        border-radius: 4px;
+        margin-bottom: 30px;
+        color: $color-orange;
+        transition: border .2s linear;
+        &::-webkit-input-placeholder{
+            color: black;
+        }
+        &::-moz-input-placeholder{
+            color: $color-orange;
+        }
+        &:focus{
+            border-color: black;
+
+        }
+    }
+
+}

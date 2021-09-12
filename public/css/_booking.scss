@@ -1,0 +1,72 @@
+@import 'mixin';
+.booking{
+    padding: var(--space-2xl) 0;
+    &-heading{
+        font-family: var(--primary-font);
+        font-size: 3.25rem;
+        font-weight: 700;
+        max-inline-size: 620px;
+    }
+
+    &-adventure{
+        @include buttonStyle();
+        text-transform: capitalize;
+        display: flex;
+        align-items: center;
+       
+
+        i{
+            margin-left: var(--space-md);
+            padding: var(--space-sx1);
+
+            font-size: 2.5rem;
+            border: 1px solid $primary-white;
+            border-radius: 50%;
+        }
+    }
+
+    
+}
+
+.form{
+    margin-top: 100px;
+
+    &-inputs{
+        background-color: $primary-white;
+        color: $color-dark;
+        padding: var(--space-lg);
+        border-radius: var(--space-sx);
+        display: grid;
+        gap: 16px;
+    }
+
+    &-input label{
+        font-size: 0.7rem;
+        text-transform: uppercase;
+        color: $primary-light;
+        font-weight: 500;
+    }
+
+    &-input input,
+    &-input select{
+        display: block;
+        border: none;
+        width: 100%;
+        padding: var(--space-sx) 0;
+
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+    &-button{
+        cursor: pointer;
+        background-color: $color-orange;
+        padding: var(--space-xl);
+        border-radius: var(--space-sx);
+        border: none;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin-top: var(--space-md);
+        box-shadow: 0px 4px 20px rgba(254,83,3,0.6);
+    }
+}
